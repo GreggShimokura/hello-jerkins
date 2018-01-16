@@ -1,6 +1,6 @@
 #!/bin/sh
 
-ssh swadmin@206.47.13.58 <<EOF
+ssh -T swadmin@206.47.13.58 <<EOF
   cd ~/Github/hello-jerkins
   git pull
   npm install --production
