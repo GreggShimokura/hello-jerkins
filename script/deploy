@@ -1,9 +1,6 @@
 #!/bin/sh
 
 ssh -T swadmin@206.47.13.58 <<EOF
-  echo $PATH
-  export PATH=/sbin:/usr/sbin:/usr/bin:/usr/local/bin
-  echo $PATH
   cd ~/Github/hello-jerkins
   git pull
   npm install --production
